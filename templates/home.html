@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block includes %}
+    <link href="{{ url_for('static', filename='carousel.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div id="myCarousel" class="carousel slide pointer-event" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+{#                <div class="d-flex justify-content-center">#}
+                    <img src="{{ url_for('static', filename='portfolio/IMG_1438.jpg') }}" alt="Photo"/>
+{#                </div>#}
+
+                {#                <div class="center-block">#}
+                {#                </div>#}
+
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Example headline.</h1>
+                        <p>Some representative placeholder content for the first slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="portfolio">Portfolio</a></p>
+                    </div>
+                </div>
+            </div>
+            {#            <div class="carousel-item">#}
+            {#                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"#}
+            {#                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">#}
+            {#                    <rect width="100%" height="100%" fill="#777" data-darkreader-inline-fill=""#}
+            {#                          style="--darkreader-inline-fill:#9e9587;"></rect>#}
+            {#                </svg>#}
+            {##}
+            {#                <div class="container">#}
+            {#                    <div class="carousel-caption">#}
+            {#                        <h1>Another example headline.</h1>#}
+            {#                        <p>Some representative placeholder content for the second slide of the carousel.</p>#}
+            {#                        <p><a class="btn btn-lg btn-primary" href="prices">Prices</a></p>#}
+            {#                    </div>#}
+            {#                </div>#}
+            {#            </div>#}
+            {#            <div class="carousel-item">#}
+            {#                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"#}
+            {#                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">#}
+            {#                    <rect width="100%" height="100%" fill="#777" data-darkreader-inline-fill=""#}
+            {#                          style="--darkreader-inline-fill:#9e9587;"></rect>#}
+            {#                </svg>#}
+            {##}
+            {#                <div class="container">#}
+            {#                    <div class="carousel-caption text-end">#}
+            {#                        <h1>One more for good measure.</h1>#}
+            {#                        <p>Some representative placeholder content for the third slide of this carousel.</p>#}
+            {#                        <p><a class="btn btn-lg btn-primary" href="contact">Contact</a></p>#}
+            {#                    </div>#}
+            {#                </div>#}
+            {#            </div>#}
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container text-black">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus volutpat urna. Pellentesque quis
+            gravida
+            leo. Aenean sagittis sem sed eleifend pretium. Nulla facilisi. Aenean vel purus quis libero sagittis
+            convallis
+            et ut libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            Donec
+            at viverra ipsum. Duis eros justo, ultricies id placerat vitae, gravida et neque.
+        </p>
+
+        <p>
+            Proin orci risus, aliquet
+            laoreet volutpat at, mattis vehicula orci. Vestibulum a feugiat odio. Sed ipsum dui, vestibulum eget justo
+            sed,
+            dapibus iaculis mauris. Vestibulum ut arcu vestibulum, vestibulum dolor ac, porta turpis. Mauris sagittis
+            ligula
+            in elementum rutrum. Integer varius dui tempus vulputate volutpat. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.
+        </p>
+
+        <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed non consequat
+            diam.
+            Nam placerat pellentesque libero, quis efficitur lacus laoreet lacinia. Maecenas eget cursus erat. Etiam
+            imperdiet, est quis blandit accumsan, turpis urna mollis nisl, euismod dictum libero tellus id nunc. Sed est
+            nulla, iaculis sit amet odio et, malesuada egestas est. Curabitur pharetra faucibus commodo. Aenean aliquet,
+            dolor non varius accumsan, tortor nulla malesuada leo, at tincidunt ipsum ex ac erat. Mauris accumsan, dolor
+            mattis finibus scelerisque, nulla erat congue nibh, at scelerisque justo tellus a mi. Sed viverra a justo eu
+            sodales. Curabitur tincidunt, turpis vel hendrerit blandit, mi leo consectetur turpis, et molestie nibh dui
+            nec
+            quam. Cras eu eleifend turpis. Praesent pharetra vehicula velit. Vivamus interdum libero id enim lobortis
+            molestie.
+        </p>
+        {#    <p>#}
+        {#        Curabitur in erat sed risus egestas venenatis in sit amet felis. Vestibulum ante ipsum primis in faucibus orci#}
+        {#        luctus et ultrices posuere cubilia curae; Morbi fermentum placerat nisl ac scelerisque. In hac habitasse platea#}
+        {#        dictumst. Phasellus malesuada bibendum nisl id molestie. Integer sagittis magna id tellus egestas, sed ultrices#}
+        {#        libero dignissim. Cras ornare sapien sed mattis rutrum.#}
+        {#    </p>#}
+    </div>
+{% endblock %}
