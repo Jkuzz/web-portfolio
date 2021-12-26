@@ -6,6 +6,7 @@ app = Flask(__name__)
 routing_dict = {
     'home': 'home.html',
     'contact': 'contact.html',
+    'kontakt': 'contact.html',
     'prices': 'prices.html',
     'test': 'test.html',
 }
