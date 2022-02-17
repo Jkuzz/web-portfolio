@@ -21,11 +21,11 @@
     {% block includes %}{% endblock %}
 </head>
 
-<body class="bg-secondary">
+<body {#class="bg-secondary"#}>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">
-            Jan Kuzelik
+            Jan Kuželík
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +43,7 @@
                     <a class="nav-link{% if self.title() == 'Kontakt' %} active{% endif %}" href="kontakt">3D Prohlídky</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link{% if self.title() == 'Kontakt' %} active{% endif %}" href="kontakt">Plánky</a>
+                    <a class="nav-link{% if self.title() == 'Plánky' %} active{% endif %}" href="plans">Plánky</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link{% if self.title() == 'Ceník' %} active{% endif %}" href="prices">Ceník</a>

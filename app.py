@@ -21,8 +21,16 @@ def send_js(resource):
 
 @app.route('/portfolio')
 def render_portfolio():
-    pictures = glob.glob('static/portfolio/*.jpg')
-    return render_template('portfolio.html', pictures=pictures)
+    return render_image_wall('static/portfolio/*.jpg', 'Portfolio')
+
+
+@app.route('/plans')
+def render_plans():
+    return render_image_wall('static/plans/*.jpg', 'Plánky')
+
+
+def render_image_wall(img_path, title):
+    return render_template('image_wall.html', pictures=glob.glob(img_path), title=title)
 
 
 @app.route('/<page>')
