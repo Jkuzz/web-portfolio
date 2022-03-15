@@ -47,10 +47,9 @@ def render_page(page):
     if page not in ROUTING_DICT.keys():
         return None
     if page in CONFIG_DEPS.keys():
-        if os.path.isfile(CFG_FILE):  # this shouldn't happen TODO: log this
+        if os.path.isfile(CFG_FILE):  # TODO: log this
             with open(CFG_FILE, "rb") as f:
                 toml_dict = tomli.load(f)
-            print(toml_dict)
             return render_template(ROUTING_DICT[page], config=toml_dict[CONFIG_DEPS[page]])
 
     return render_template(ROUTING_DICT[page], config={})

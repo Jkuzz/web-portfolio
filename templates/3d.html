@@ -3,12 +3,13 @@
 {% block title %}3D Prohlídky{% endblock %}
 
 {% block content %}
-    <div id="bg-strip" class="container"></div>
-    <div class="container p-4">
-        <div class="row">
-            {% for prohlidka in config %}
-                <iframe height="600em" src="{{ prohlidka }}" allowfullscreen></iframe>
-            {% endfor %}
+    <div id="bg-strip" class="container">
+        <div class="container p-4">
+            <div class="row">
+                {% for prohlidka in config %}
+                    <iframe height="600em" src="{{ prohlidka }}" allowfullscreen></iframe>
+                {% endfor %}
+            </div>
         </div>
     </div>
 {% endblock %}

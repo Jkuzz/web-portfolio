@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
 function createCarousel(img) {
     const modalBody = document.querySelector(".modal-body .container-fluid");
     modalBody.innerHTML = `
-    <div id="lightboxCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
-      <div class="carousel-inner">
+    <div id="lightboxCarousel" class="carousel slide carousel-fade pointer-event" data-bs-ride="carousel" data-bs-interval="false">
+      <div id="lightboxCarouselInner" class="carousel-inner">
         ${createSlides(img)}
       </div> 
       <button class="carousel-control-prev" type="button" data-bs-target="#lightboxCarousel" data-bs-slide="prev">

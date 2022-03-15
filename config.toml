@@ -5,20 +5,20 @@
 [[carousel]]
 header = "Focení nemovitostí"
 desc = "Some representative placeholder content for the first slide of the carousel."
-link = "portfolio"
 button = "Portfolio"
 img = "portfolio/IMG_1438.jpg"
+link = "portfolio"
 
 [[carousel]]
 header = "Virtuální prohlídky"
 desc = "Some representative placeholder content for the second slide of the carousel."
-link = "3d"
 button = "Prohlídky"
 img = "portfolio/IMG_1609.jpg"
+link = "3d"
 
 [[carousel]]
 header = "Plánky"
 desc = "Some representative placeholder content for the third slide of this carousel."
-link = "plans"
 button = "Plánky"
 img = "portfolio/IMG_1495_hdr.jpg"
+link = "plans"
